@@ -10,6 +10,7 @@ tanzu apps workload create app-maven-kpack-fails-at-image-build \
   --label apps.tanzu.vmware.com/has-tests=true \
   --label app.kubernetes.io/part-of=app-maven-kpack-fails-at-image-build \
   --type web \
+  --build-env BP_JVM_VERSION=5 \
   --yes
 ```
 
